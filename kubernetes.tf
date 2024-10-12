@@ -1,5 +1,5 @@
 data "oci_core_image" "node" {
-  image_id = "ocid1.image.oc1.ca-toronto-1.aaaaaaaai25tbzgbm26iszk6h5b5gsmpztks5xqvfwti3t2k3f2qzhbkoapq"
+  image_id = var.image_id
 }
 
 resource "oci_containerengine_cluster" "cluster1" {
